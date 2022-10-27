@@ -10,6 +10,7 @@ $title = "Naomi Monderer 💚"; ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
     <title><?= $title ?></title>
 </head>
 <?php
@@ -31,9 +32,22 @@ require('include/header.php');
         <img class="title-index" src="image/accueil/Développeuse d’applications WEB & MOBILE Jr.png" alt="">
 
 
-        <h2 class="inter-light taille1 subtitle-index "> Alternance <span class="inter-medium taille4">Septembre 2022</span></h2>
+
+
+
+
+  <div class="heading">
+  <div>
+    <h2 class="slide-up"><span class="inter-light taille5 subtitle-index ">Alternance <span class="inter-medium taille4">Novembre 2022</span></span></h2>
+  </div>
+</div>
+
+        
+  <!-- <span id="alternance-box">
+    <h2  id="alternance" class="inter-light taille1 subtitle-index "> Alternance <span class="inter-medium taille4">Septembre 2022</span></h2>
+  </span> -->
         <p class="inter-light taille4 contenu">En formation à <a class="LaPlateforme_" href="https://laplateforme.io/">la Plateforme_</a> afin de m’ouvrir aux domaines du web, 
-           je cherche une alternance pour Septembre 2022. 
+           je cherche une alternance pour Novembre 2022. 
             Les projets réalisés au cours de cette année m’ont permis de découvrir comment communiquer avec une base de donnée grâce à Mysql,
             autant qu’utiliser des outils de maquettage comme Figma. J'ai aussi appris à penser la conception d'un projet, 
             à organiser les différentes étapes, à aborder certaines logiques d’algorithmie et à travailler en équipe...

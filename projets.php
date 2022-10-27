@@ -15,9 +15,15 @@
 require('include/header.php');
 ?>
 <main class="main-projets">
-    <img  class="title-projets" src="image/projets/lesProjets.png" alt="">
+<div class="heading flex-center">
+  <div>
+    <img  class="slide-up-titles title-projets" src="image/projets/lesProjets.png" alt="">
+  </div>
+</div>
+    
     <section class="contener-projets">
     <article class="bloc-projets">
+
             <a  class="size-link" href="https://collectifalbeyt.hmsw.eu/al-beyt/views/front/index.php" target="blank">
                 <img class="size animation-projet" src="image/projets/al-beyt.png" alt="">
             </a>

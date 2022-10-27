@@ -18,16 +18,21 @@ require('include/header.php');
 ?>
 <main class="main-a-propos">
     <section class="contener-a-propos">
-        <img class="title-a-propos" src="image/a_propos/a_propos.png" alt="">
-        <p class="inter-light taille3 contenu-a-propos">Grâce à mon parcours étudiant dans le domaine de l'art
-                (bac art appliqué et Diplôme National des beaux-arts de Marseille),
-                j’ai développé une appetence particulière pour l’aspect visuel et graphique
-                via mes pratiques artistiques. Je souhaite injecter au maximum de ma créativité
-                dans le web afin d’orienter ma motivation vers de nouveaux projets! 
+        <div class="heading flex-center">
+            <div class="center-title-a-propos">
+                <img class=" slide-up-titles title-a-propos" src="image/a_propos/a_propos.png" alt="">
+                <!-- <img  class="slide-up-titles title-projets" src="image/projets/lesProjets.png" alt=""> -->
+            </div>
+        </div>
+       
+        <p class="inter-light taille4 contenu-a-propos">Grâce à un cursus étudiant dans le domaine de l'art
+                (Bac arts Appliqués et Diplôme National des beaux-arts de Marseille),
+                j’ai aiguisé un goût prononcé pour la culture de l'image et le graphisme. Les pratiques artistiques et ce site web
+                retracent mon parcours.
         </p>
         <article class="box-cv">
-            <a class="size-link-a-propos" href="cv.pdf" target="_blank">
-                <img class="cv" src="image/a_propos/cv_screen.png">
+            <a class="size-link-a-propos" href="Recherche_Alternance.pdf" target="_blank">
+                <img class="cv" src="image/a_propos/Recherche_Alternance.png">
             </a>
             <img class="size-draw" src="image/a_propos/dessinNew.png" alt="">
         </article>
@@ -57,8 +62,8 @@ require('include/header.php');
         </article>
 
         <p style="text-align: center"><❤>EN COURS DE CONSTRUCTION<❤></p>
-        <h2 class="title-ceramique taille"><span class="taille5">(♡μ_μ)	 。</span>  Photographie <span class="taille5">☆:.</span></h2>
-        <h2 class="title-ceramique taille"><span class="taille5">.:☆ </span> Gravure <span class="taille5"> (×﹏×) </span></h2>
+        <!-- <h2 class="title-ceramique taille"><span class="taille5">(♡μ_μ)	 。</span>  Photographie <span class="taille5">☆:.</span></h2>
+        <h2 class="title-ceramique taille"><span class="taille5">.:☆ </span> Gravure <span class="taille5"> (×﹏×) </span></h2> -->
     </section>
 </main>
 
