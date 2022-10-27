@@ -1,0 +1,705 @@
+/*-----font-----*/
+
+@font-face {
+    font-family: 'baselneue-blackituploadedfile';
+    src: url('basel_neue_black_italic-webfont.woff2') format('woff2'),
+         url('basel_neue_black_italic-webfont.woff') format('woff'),
+         url('../font/Victory_History_Demo.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baselneue-blackuploaded_file';
+    src: url('basel_neue_black-webfont.woff2') format('woff2'),
+         url('basel_neue_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baselneue-bolditauploadedfile';
+    src: url('basel_neue_bold_italic-webfont.woff2') format('woff2'),
+         url('basel_neue_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'baselneue-mediumiuploadedfile';
+    src: url('basel_neue_medium_italic-webfont.woff2') format('woff2'),
+         url('basel_neue_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baselneue-mediumuploaded_file';
+    src: url('basel_neue_medium-webfont.woff2') format('woff2'),
+         url('basel_neue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+        @font-face {
+            font-family: 'baselneueuploaded_file';
+            src: url('../font/basel-neue/basel_neue-webfont.woff2') format('woff2'),
+                url('../font/basel-neue/basel_neue-webfont.woff') format('woff'),
+                url('../font/basel-neue/.otf') format('otf');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        @font-face
+        {
+            font-family: 'baselneue-bolduploaded_file';
+            src: url('../font/basel-neue/basel_neue_bold-webfont.woff2') format('woff2'),
+                url('../font/basel-neue/basel_neue_bold-webfont.woff') format('woff'),
+                url('../font/basel-neue/BaselNeue.otf') format('otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'baselneue-italicuploaded_file';
+            src: url('../font/basel-neue/basel_neue_italic-webfont.woff2') format('woff2'),
+                url('../font/basel-neue/basel_neue_italic-webfont.woff') format('woff'),
+                url('../font/basel-neue/.otf') format('otf');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        /*------------------------------------*/
+
+
+        @font-face {
+    font-family: 'molgak_classyregular';
+    src: url('../font/molgak-classy-regular/molgakclassyregular-nrodg-webfont.woff2') format('woff2'),
+         url('../font/molgak-classy-regular/molgakclassyregular-nrodg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.cursor
+{
+    cursor: url("mouse.svg"), pointer;
+}
+/*-----/font\-----*/
+*
+{
+    margin:0;
+    padding:0;
+}
+
+
+
+body
+{   
+    cursor: cell;
+    background:rgb(0, 0, 0);
+    color:#fff;
+}
+
+a
+{
+    text-decoration:none;
+    color:white;
+}
+
+ul
+{
+    list-style: none;
+}
+/*-----------taille--------------*/
+.taille
+{
+    font-size: 3em;
+}
+.taille1
+{
+   font-size:1.5em;
+}
+.taille2
+{
+    font-size:1.2em;
+}
+.taille3
+{
+    font-size:1em;
+}
+.taille4
+{
+    font-size:0.8em;
+}
+.taille5
+{
+    font-size:0.5em
+}
+/*-----------/taille\--------------*/
+
+/*-----------police--------------*/
+
+/*INTER*/
+    .inter-light
+    {
+        font-family:'inter',sans-serif;
+        font-weight: 200;
+    }
+    .inter-medium
+    {
+        font-family:'inter',sans-serif;
+        font-weight: 500;
+    }
+    .inter-regular
+    {
+        font-family:'inter',sans-serif;
+        font-weight: 400;
+    }
+/*BASEL-NEUE*/
+
+    .basel-neue
+    {
+        font-family: 'baselneueuploaded_file',sans-serif;
+    }
+
+    .basel-neue-italic
+    {   
+        font-family: 'baselneue-italicuploaded_file',sans-serif;
+    }
+
+    .basel-neue-bold
+    {
+        font-family: 'baselneue-bolduploaded_file';
+    }
+/* MOLGAK */
+
+    .molgak
+    {
+        font-family: 'molgak_classyregular';
+    }
+
+
+/*-----------/police\------------*/
+
+/*------------header-------------*/
+.nav-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .naomi { grid-area: 1 / 1 / 2 / 3; }
+    #projets  { grid-area: 1 / 3 / 2 / 4; }
+    #a_propos { grid-area: 1 / 4 / 2 / 5; }
+    #contact { grid-area: 1 / 5 / 2 / 6; } 
+    .item-nav
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        border-right: 1px solid #3D3D3D;
+        background-color:rgb(0, 0, 0);
+    }
+
+        /*---hover-links---*/
+          
+          .container {
+            display: contents;
+            /* vertical-align: middle; */
+            text-align: center;
+           
+          }
+          
+       
+          
+          span.nav-anim {
+            position: relative;
+            display: block;
+            cursor: pointer;
+          }
+          
+          span.nav-anim:before, span.nav-anim:after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 0.5px;
+            top: 50%;
+            margin-top: -0.5px;
+            background: #fff;
+          }
+          
+          span.nav-anim:before {
+            left: -2.5px;
+          }
+          span.nav-anim:after {
+            right: 2.5px;
+            background: #fff;
+            transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+          }
+          
+          span.nav-anim:hover:before {
+            background: #fff;
+            width: 100%;
+            transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+          }
+          
+          span.nav-anim:hover:after {
+            background: transparent;
+            width: 100%;
+            transition: 0s;
+          }
+          /*---hover-links---*/
+        
+                                    
+
+ header
+{
+    font-family: 'Inter', sans-serif;
+    font-weight:200;
+    background: rgb(0, 0, 0);
+    color:white;
+    width: 100%;
+    height: 10vh;
+    font-size: 1em;
+    border-bottom: 1px solid #3D3D3D;
+}
+
+.naomi
+{   
+    font-weight:300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color:rgb(0, 0, 0);
+    border-right: 1px solid #3D3D3D;
+}
+
+/*------------/header\-------------*/
+
+/*------------footer-------------*/
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    font-weight: 200;
+    border-top: 1px solid #3D3D3D;
+    background-color:rgb(0, 0, 0);
+    width: 100%;
+    height: 60vh;
+}
+.mail
+{
+    font-size:1.2em;
+}
+
+.slogan
+{
+    width: 50%;
+    margin-top:70px;
+}
+
+
+
+/*------------/footer\-----------*/
+
+
+
+
+/*------------index-------------*/
+
+.main-blocks
+{
+    display: flex;
+
+}
+.bandeau
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    background-color:rgb(0, 0, 0);
+    width: 20%; 
+    /* height: 300px ;   */
+}
+
+/* .bienvenue
+{
+  
+    transform: rotate(-90deg);
+    position: absolute;
+    color: rgb(207, 0, 0);
+ 
+    
+    width:100vw ;
+   
+} */
+
+.contener
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    align-items:center;
+    margin-top:30px;
+    position:relative;
+}
+
+.kagome
+{
+    background-image: url("image/accueil/kagome.png");
+    position:absolute;
+    left: 407px;
+    top: 6px;
+    width: 55%;
+}
+.title-index
+{
+    width: 80%;
+}
+
+.subtitle-index
+{
+    margin:30px;
+    padding-left: 20%;
+}
+
+.contenu
+{
+    width: 30%;
+    padding-right: 50%;
+    margin-top:30px;
+    /* padding:30px 0 ; */
+}
+.signature-index
+{   
+    font-family: 'inter',sans-serif;
+    font-weight: 100;
+    font-size:3em;
+    color: rgba(255, 253, 253, 0.486);
+    margin: 40px;
+}
+/*------------/index\-------------*/
+/*-----------/projets\------------*/
+.bloc-projets
+{
+    opacity:.6;
+    transition: opacity ease-out .5s;
+}
+.bloc-projets:hover
+{
+    opacity: 1;
+}
+.main-projets
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.contener-projets
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-projets
+{
+    width: 70%;     
+    margin-top: 50px;
+}
+.bloc-projets
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px;
+    width: 80%;
+}
+.sous-bloc-projets
+{   
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    flex-direction: column;
+}
+
+a.size-link
+{
+    width: 70%;
+}
+
+img.size
+{
+    width: 100%;
+}
+
+h2.molgak.taille1
+{
+    margin-bottom:10px;
+}
+/*-----------/projets\------------*/
+
+/*------------/a_propos\----------*/
+.contener-a-propos
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-a-propos
+{
+    
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenu-a-propos
+{
+    width: 60%;
+}
+
+.box-cv
+{
+    display: flex;
+    position:relative;
+    width: 60%;
+    height:550px;
+}
+.size-link-a-propos
+{
+    cursor:pointer;
+}
+.cv
+{   
+
+    width:350px;
+    margin:50px 0 50px 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    position:absolute;
+    transition: transform .5s;
+}
+.cv:hover
+{   
+    z-index: 5;
+    filter:none;
+    transform: scale(1.02);
+}
+
+.size-draw
+{
+    width: 600px;
+    z-index: 4;
+    position:absolute;
+    bottom:0;
+    left:180px;
+}
+
+hr
+{
+    width:80%;
+    border: 0.5px solid #3D3D3D;
+    margin-top:40px;
+}
+
+.bloc-image
+{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top:20vh;
+}
+
+.sous-bloc-image
+{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+}
+
+.title-ceramique
+{
+    font-family: 'molgak_classyregular';
+   
+}
+/*-------------image céramique-----------------*/
+.animation
+{
+    filter: brightness(80%);
+    z-index:1;
+    transition: background-color 1s ease-out;
+    transition: filter 1s ease-out;
+}
+.animation:hover
+{   
+    
+    filter: brightness(110%);
+    background-color:rgba(0, 0, 0, 0.324);
+    background-color: linear-gradient(rgba(0, 0, 0, 0.619), white, black);
+}
+.animation2
+{
+    filter:brightness(60%);
+    opacity: 0.8;
+    transition: filter .5s ease-out;
+
+}
+.animation2:hover
+{
+
+    filter:brightness(100%);
+    opacity:1;
+    background-color: linear-gradient(rgb(0, 0, 0), white, black);
+}
+
+.sous-bloc-1
+{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.gargouille1
+{
+    position:absolute;
+    width:400px;
+    left:50px;
+    top: 50px;
+    transition: opacity .5s ease-out;
+    opacity:0.5;
+}
+
+.gargouille1:hover
+{   
+    opacity:1;
+    filter:brightness(110%);
+}
+
+.monstre2
+{   
+    position:absolute;
+    width:450px;
+    left:400px;
+    bottom:0;
+}
+.monstre2:hover
+{ 
+    z-index:4;
+}
+
+.sous-bloc-2
+{
+    display: flex;
+    position:relative;
+    bottom:200px;
+    height: 900px;
+}
+.lui3
+{
+    width: 400px;
+    position: absolute;
+    left:40px;
+    top: -51px;
+    z-index:1;
+    filter:brightness(60%);
+    opacity: 0.8;
+    transition: filter .5s ease-out;
+}
+/* .lui3:hover
+{
+    filter:brightness(100%);
+    opacity:1;
+    background-color: linear-gradient(rgb(0, 0, 0), white, black);
+} */
+
+.arbre4
+{
+    transform: rotate(30deg);
+    width: 1200px;
+    position: absolute;
+    top:130px;
+    filter: brightness(60%)
+}
+.arbre4:hover
+{
+    opacity: 1;
+    filter: brightness(100%)
+}
+
+.sous-bloc-3
+{
+    display: flex;
+    flex-direction:column;
+    position:relative;
+    bottom:900px;
+    height: 500px;
+}   
+
+.fleurs2
+{
+    width:700px;
+    position: absolute;
+    z-index:0;
+    filter:brightness(50%);
+    transition: filter 1.5s ease-out;
+}
+.fleurs2:hover
+{   cursor:pointer; 
+    z-index:3;
+    filter:brightness(100%);
+    background: linear-gradient(#000000,#000000, #ffffff,#000000,); 
+    
+}
+.sous-bloc-4
+{
+    display: flex;
+    flex-direction:column;
+    position:relative;
+    bottom: 200px;
+    height: 200px;
+}
+
+.gargouille2
+{
+    z-index: 3;
+    position: absolute;
+    width: 250px;
+    bottom: 154px;
+    left: 451px;
+}
+
+.vase
+{
+    position: absolute;
+    width: 280px;
+    left:100px;
+    top:-20px;
+}
+
+/*------------/a_propos\----------*/
