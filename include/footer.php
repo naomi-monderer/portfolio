@@ -1,6 +1,6 @@
 <footer>
     <section>
-       <h1 class=" inter-light taille"> GWOKAANG</h1> </br>
+       <h1 class="inter-light taille"> GWOKAANG</h1> </br>
         <a class="mail" href="mailto:naomi.monderer@laplateforme.io">naomi.monderer@laplateforme.io</a>
     </section>
     <section>

@@ -9,12 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
     <title><?= $title ?></title>
 </head>
 <?php
 require('include/header.php');
 ?>
 <main class="main-projets">
+
+<div class="inner-cursor"></div>
+<div class="outer-cursor"></div>
+
 <div class="heading flex-center">
   <div>
     <img  class="slide-up-titles title-projets" src="image/projets/lesProjets.png" alt="">

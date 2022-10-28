@@ -93,18 +93,56 @@
     font-style: normal;
 
 }
-.cursor
+/*--------------------/font\-----------------*/
+
+/*-------------------Cursor------------------*/
+.inner-cursor
 {
-    cursor: url("mouse.svg"), pointer;
+   position: fixed;
+   left:20px;
+   width: 20px;
+   height: 20px;
+   transform: translate(-50%,-50%);
+   mix-blend-mode: difference;
+   border-radius: 50%;
+   background-color: white;
+   /* opacity: 0.5; */
+   transition :  width 0.5s, height 0.5s;
+   pointer-events: none;
+   z-index: 1000;
 }
-/*-----/font\-----*/
+
+.inner-cursor.grow{
+
+    width:30px;
+    height:30px;
+
+    /* transition :  width 0.5s, height 0.5s; */
+}
+
+.outer-cursor{
+   
+    z-index: 1000;
+   position: fixed;
+   left: 10px;
+   width: 30px;
+   height: 30px;
+   transform: translate(-50%,-50%);
+   pointer-events: none;
+   mix-blend-mode: difference;
+   transition:  0s; 
+   border : 1px solid white;
+   border-radius : 50%;
+
+}
+/*-------------------/Cursor\------------------*/
+
 *
 {
     margin:0;
     padding:0;
+    cursor:none;
 }
-
-
 
 body
 {   
@@ -117,12 +155,38 @@ a
 {
     text-decoration:none;
     color:white;
+    cursor:default;
 }
 
 ul
 {
     list-style: none;
 }
+p {
+   
+    line-height: 1.5em;
+    animation: slide-up-p 1.2s;
+  } 
+
+  .slide-up-p{
+    opacity: 1;
+    animation: slide-up-p 1.2s;
+  }
+
+  @keyframes slide-up-p {
+
+    from {
+  
+      line-height: 10em;
+    }
+
+    to {
+      
+      line-height: 1em;
+    }
+
+  }
+
 /*-----------taille--------------*/
 .taille
 {
@@ -226,12 +290,10 @@ ul
            
           }
           
-       
-          
-          span.nav-anim {
+        span.nav-anim {
             position: relative;
             display: block;
-            cursor: pointer;
+            /* cursor: pointer; */
           }
           
           span.nav-anim:before, span.nav-anim:after {
@@ -409,12 +471,10 @@ footer
 .bandeau
 {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    
     background-color:rgb(0, 0, 0);
     width: 20%; 
-    /* height: 300px ;   */
+    
 }
 
 /* .bienvenue
@@ -448,6 +508,7 @@ footer
     left: 407px;
     top: 6px;
     width: 55%;
+    animation : slide-in-right 1.2s ease-in-out;
 }
 .title-index
 {
@@ -474,6 +535,11 @@ footer
     font-size:3em;
     color: rgba(255, 253, 253, 0.486);
     margin: 40px;
+}
+.box-alternance
+{
+    width: 100%;
+    animation : slide-in-right 1.2s ease-in-out;
 }
 /*------------/index\-------------*/
 /*-----------/projets\------------*/
@@ -572,15 +638,19 @@ h2.molgak.taille1
 }
 
 .box-cv
-{
+{ 
+
     display: flex;
     position:relative;
     width: 60%;
     height:550px;
+ 
 }
+
+
 .size-link-a-propos
 {
-    cursor:pointer;
+    /* cursor:pointer; */
 }
 .cv
 {   
@@ -590,6 +660,16 @@ h2.molgak.taille1
     filter: grayscale(100%);
     position:absolute;
     transition: transform .5s;
+    animation : slide-in-left 1.2s ease-in-out;
+}
+@keyframes slide-in-left{
+
+    0%{
+        transform : translateX(-1000px);
+    }
+    100%{
+        transform : translateX(0px);
+    }
 }
 .cv:hover
 {   
@@ -605,8 +685,17 @@ h2.molgak.taille1
     position:absolute;
     bottom:0;
     left:180px;
+    animation : slide-in-right 1.2s ease-in-out;
 }
+@keyframes slide-in-right{
 
+    0%{
+        transform : translateX(1000px);
+    }
+    100%{
+        transform : translateX(0px);
+    }
+}
 hr
 {
     width:80%;
@@ -759,7 +848,8 @@ hr
     transition: filter 1.5s ease-out;
 }
 .fleurs2:hover
-{   cursor:pointer; 
+{   
+    /* cursor:pointer;  */
     z-index:3;
     filter:brightness(100%);
     background: linear-gradient(#000000,#000000, #ffffff,#000000,); 

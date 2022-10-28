@@ -11,12 +11,18 @@ $title = "À propos"; ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
     <title><?= $title ?></title>
 </head>
 <?php
 require('include/header.php');
 ?>
 <main class="main-a-propos">
+    
+<div class="inner-cursor"></div>
+<div class="outer-cursor"></div>
+
     <section class="contener-a-propos">
         <div class="heading flex-center">
             <div class="center-title-a-propos">
@@ -36,6 +42,7 @@ require('include/header.php');
             </a>
             <img class="size-draw" src="image/a_propos/dessinNew.png" alt="">
         </article>
+
         <hr></hr>
     </section>
     <section class='bloc-image'>

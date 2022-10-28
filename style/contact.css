@@ -31,6 +31,46 @@
         font-style: normal;
     }
 /*----/font\----*/  
+/*-------------------Cursor------------------*/
+
+.inner-cursor
+{
+   position: fixed;
+   /* left:20px; */
+   width: 20px;
+   height: 20px;
+   transform: translate(-50%,-50%);
+   mix-blend-mode: difference;
+   border-radius: 50%;
+   background-color: white;
+   /* opacity: 0.5; */
+   transition :  width 0.5s, height 0.5s;
+   pointer-events: none;
+   z-index: 1000;
+}
+
+.inner-cursor.grow{
+
+    width:30px;
+    height:30px;
+}
+
+.outer-cursor{
+   
+   z-index: 1000;
+   position: fixed;
+   /* left: 10px; */
+   width: 30px;
+   height: 30px;
+   transform: translate(-50%,-50%);
+   pointer-events: none;
+   mix-blend-mode: difference;
+   transition:  0s; 
+   border : 1px solid white;
+   border-radius : 50%;
+
+}
+/*-------------------/Cursor\------------------*/
 
 *
 {
