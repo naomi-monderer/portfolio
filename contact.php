@@ -24,31 +24,35 @@ $title = "Contact"; ?>
             <article class="item-nav" id="projets"><a class="links-header cursor" href="projets.php"><span class="nav-anim">Les projets</span></a></article>
             <article class="item-nav" id="a_propos"><a class="links-header cursor" href="a_propos.php"><span class="nav-anim">À propos</span></a></article>
             <article class="item-nav" id="contact"><a class="links-header cursor" href="contact.php"><span class="nav-anim">Contact</span></a></article>
-            </nav> 
+        </nav> 
     </div>
 </header>
 <main>
-
 <div class="inner-cursor"></div>
 <div class="outer-cursor"></div>
-
 <div class="contener">
     <section class="contener1">
-        <h1 class="basel-neue-thin taille1 title">Contact</h1>
+        <h1 class="basel-neue-thin taille1 title">Contact</h1></br>
+        <span class="inter-light     date"></br>
+        <?php 
+            $formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+            $tempsPresent = new DateTime();
+            echo $formatter->format($tempsPresent)." ".date_format($tempsPresent,'H:i')
+        ?>
+        </span>
+        <article class="elements">
+            <p class="inter-light marseille ">Marseille</p></br>
+            <p class="inter-light france">France</p></br>
+        </article>
     </section>
     <section class="contener2">
-        <p class="inter-medium taille1 phrase-accroche">:｡･:*:･ﾟ’★ AU PLAISIR D’ECHANGER AVEC VOUS 。
-            CONTACTEZ MOI VIA L’ADRESSE MAIL CI-DESSOUS ☆｡･:*:･ﾟ’</p>
+        <p class="inter-medium taille1 phrase-accroche">｡･*:ﾟ’★ AU PLAISIR D’ECHANGER AVEC VOUS 。
+            CONTACTEZ MOI VIA L’ADRESSE MAIL CI-DESSOUS ↴ ☆｡･:*･ﾟ’</p>
     </section>
-    <section class="contener3">
-        <article class="elements">
-            <p class="inter-light taille1">Marseille</p></br>
-            <p class="inter-light taille1">France</p></br>
-        </article>  
-
-             <a class="link" href="mailto:naomi.monderer@laplateforme.io"><p class="inter-light-italic taille2">naomi.monderer@laplateforme.io</p><span>💌</span></a>
-     
-        
+    <section class="contener3 mail">
+        <a class="link" href="mailto:naomi.monderer@laplateforme.io">
+            <span class="inter-light-italic taille2 ">naomi.monderer@laplateforme.io</span> <span> 💌 </span>
+        </a>
     </section>
     <hr>
     <section class="contener4">
@@ -68,7 +72,6 @@ $title = "Contact"; ?>
     </section>
 </div>
 </main>
-
 <?php
 require('include/footer.php');
 ?>

@@ -30,8 +30,29 @@
         font-weight: normal;
         font-style: normal;
     }
-/*----/font\----*/  
-/*-------------------Cursor------------------*/
+/*-------------------/Font\--------------------*/
+/*-------------------Keyframe------------------*/
+@keyframes slide-in-left{
+
+    0%{
+        transform : translateX(-1000px);
+    }
+    100%{
+        transform : translateX(0px);
+    }
+}
+
+@keyframes slide-in-right{
+
+    0%{
+        transform : translateX(1500px);
+    }
+    100%{
+        transform : translateX(0px);
+    }
+}
+/*-------------------\Keyframe/------------------*/
+/*-------------------Cursor-------------------*/
 
 .inner-cursor
 {
@@ -82,6 +103,7 @@ body
 {   
    
     background:#ADFF00;
+    /* background:#405513; */
     color:rgb(2, 2, 2);
 }
 main
@@ -269,7 +291,7 @@ ul
  header
 {
     font-family: 'Inter', sans-serif;
-    font-weight:200;
+    font-weight:300;
     background: #ADFF00;
     color:rgb(0, 0, 0);
     width: 100%;
@@ -336,12 +358,43 @@ footer
     align-items: flex-end;
     width: 100%;
     height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: brown; */
+    align-items: flex-start;
+    margin-top: 4em;
+    /* margin-bottom: 2em; */
 }
 .title
 {
     
     font-size: 2.5em;
+    animation : slide-in-left 0.8s ease-in-out;
 }	
+.date
+{
+    font-size:1em;
+    font-weight: 100;
+    margin-bottom: 10px;
+    animation : slide-in-left 1s ease-in-out;
+    
+    
+}
+.marseille
+{
+    animation : slide-in-left 1.1s ease-in-out;
+}
+
+.france
+{
+    animation : slide-in-left 1.2s ease-in-out;
+}
+
+.mail
+{
+    animation : slide-in-left 0.8s ease-in-out;
+}
 /*------\section1\------*/
 
 /*------section2------*/
@@ -351,16 +404,15 @@ footer
     align-items: center;
     justify-content:flex-end;
     width: 100%;
-    height: 35vh;
 }
 .phrase-accroche
 {
-    /* background-color:RED; */
-    width: 68%;
+    width: 69%;
     font-size: 2rem;
-    
-
+    margin-bottom:10vh;
+    animation : slide-in-right 1.5s ease-in-out;
 }
+
 /*------\section2/------*/
 /*------section3------*/
 .contener3
