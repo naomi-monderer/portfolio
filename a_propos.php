@@ -43,7 +43,7 @@ require('include/header.php');
             <img class="size-draw" src="image/a_propos/dessinNew.png" alt="">
         </article>
 
-        <hr></hr>
+        <hr class="hr-a-propos"></hr>
     </section>
     <section class='bloc-image'>
         <article class="sous-bloc-image">

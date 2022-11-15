@@ -54,7 +54,7 @@ images.forEach((image) => {
         innerCursor.classList.remove("grow")
     });
 });
-
+1898
 paragraphs.forEach((paragraph) => {
 
     paragraph.addEventListener('mouseover', () => {
@@ -94,17 +94,6 @@ titresh2.forEach((titre) => {
     
 });
 
-// slide-up-p
 
-var $p = $("p");
-    var text = $p.text();
-    var words = text.split(" ");
-    newtext = "";
-    $(words).each(function(i, el) {
-      newtext += "<span class='slide-up-p'>" + el + "</span>" + " ";
-      $p.delay(1000 * i).html(newtext)
-    });
-
-    ;
 
 })
